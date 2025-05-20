@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap');
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+  font-family: "Schibsted Grotesk", sans-serif;
+}
+
+.order-section {
+  background: #fff;
+  padding: 30px;
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  border-radius: 10px;
+}
+
+.order- h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.order-form label {
+  display: block;
+  margin: 15px 0 5px;
+}
+
+.order-form input,
+.order-form textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.order-form button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  background: #28a745;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.order-form button:hover {
+  background: #218838;
+}

@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FreshCart</title>
+    
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet icon"
+      href="https://cdn.pixabay.com/photo/2014/04/02/10/53/shopping-cart-304843_1280.png"
+    />
+  </head>
+  <body>
+   <header class="header" data-aos="zoom-out-right" data-aos-offset="100">
+      <div class="logo">
+        <img
+          src="https://cdn.pixabay.com/photo/2014/04/02/10/53/shopping-cart-304843_1280.png"
+          alt="Logo"
+        />
+        FreshCart
+      </div>
+      <div class="search-bar-container">
+        <input type="text" placeholder="Search for products" />
+        <button>
+          <span> <a href="map.html">Location</a></span>
+        </button>
+      </div>
+      <div class="icon">
+      </div>
+      <div class="icon">
+        <i class="fa-light fa-user fa-xl" style="color: #041f17"></i>
+      </div>
+      <div class="icon">
+        <i class="fa-light fa-shop-lock fa-xl" style="color: #0e1116"></i>
+      </div>
+    </header>
+<!-- menu navber -->
+  <nav class="navbar">
+    <ul class="menu">
+      <li class="btn-category">
+        <a href="#">Home <i class="fa-solid fa-chevron-down"></i></a>
+        <div class="dropdown">
+          <ul class="navbar-drop">
+            <li><a class="drop-link" href="#">Mobile App</a></li>
+            <li><a class="drop-link" href="#">Home Local Store</a></li>
+            <li><a class="drop-link" href="#">Home Default</a></li>
+            <li><a class="drop-link" href="#">Home Modern</a></li>
+            <li><a class="drop-link" href="#">Home Creative</a></li>
+            <li><a class="drop-link" href="#">Home Store</a></li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="btn-category">
+        <a href="#">Shop <i class="fa-solid fa-chevron-down"></i></a>
+        <div class="dropdown">
+          <ul class="navbar-drop">
+            <li><a class="drop-link" href="#">Shop Single</a></li>
+            <li><a class="drop-link" href="#">Shop Cart</a></li>
+            <li><a class="drop-link" href="#">Shop 3 Column</a></li>
+            <li><a class="drop-link" href="#">Shop Filter</a></li>
+            <li><a class="drop-link" href="#">Shop Grid</a></li>
+            <li><a class="drop-link" href="#">Shop List</a></li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="btn-category">
+        <a href="#">Stores <i class="fa-solid fa-chevron-down"></i></a>
+        <div class="dropdown">
+          <ul class="navbar-drop">
+            <li><a class="drop-link" href="#">Shop Single</a></li>
+            <li><a class="drop-link" href="#">Shop Grid</a></li>
+            <li><a class="drop-link" href="#">Shop List</a></li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="btn-category">
+        <a href="#">Mega Menu <i class="fa-solid fa-chevron-down"></i></a>
+        <div class="dropdown">
+          <ul class="navbar-drop">
+            <li><a class="drop-link" href="#">Mega Feature 1</a></li>
+            <li><a class="drop-link" href="#">Mega Feature 2</a></li>
+            <li><a class="drop-link" href="#">Mega Feature 3</a></li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="btn-category">
+        <a href="#">Pages <i class="fa-solid fa-chevron-down"></i></a>
+        <div class="dropdown">
+          <ul class="navbar-drop">
+            <li><a class="drop-link" href="#">About Us</a></li>
+            <li><a class="drop-link" href="#">Contact</a></li>
+            <li><a class="drop-link" href="#">FAQ</a></li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="btn-category">
+        <a href="#">Account <i class="fa-solid fa-chevron-down"></i></a>
+        <div class="dropdown">
+          <ul class="navbar-drop">
+            <li><a class="drop-link" href="#">Login</a></li>
+            <li><a class="drop-link" href="#">Register</a></li>
+            <li><a class="drop-link" href="#">Forgot Password</a></li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="btn-category">
+        <a href="#">Dashboard <i class="fa-solid fa-chevron-down"></i></a>
+        <div class="dropdown">
+          <ul class="navbar-drop">
+            <li><a class="drop-link" href="#">Overview</a></li>
+            <li><a class="drop-link" href="#">Orders</a></li>
+            <li><a class="drop-link" href="#">Settings</a></li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="btn-category">
+        <a href="#">Docs <i class="fa-solid fa-chevron-down"></i></a>
+        <div class="dropdown">
+          <ul class="navbar-drop">
+            <li><a class="drop-link" href="#">Getting Started</a></li>
+            <li><a class="drop-link" href="#">API Guide</a></li>
+            <li><a class="drop-link" href="#">Changelog</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+    <hr />
+  </nav>
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img
+            src="https://cdn.pixabay.com/photo/2015/05/04/10/16/vegetables-752153_1280.jpg"
+            alt=""
+          />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://cdn.pixabay.com/photo/2019/01/03/22/40/popcorn-3912111_960_720.jpg" alt="">
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+      <div class="autoplay-progress">
+        <svg viewBox="0 0 48 48">
+          <circle cx="24" cy="24" r="20"></circle>
+        </svg>
+      </div>
+    </div>
+
+    <div class="container-40">
+      <div class="row40">
+        <div class="col-40">
+          <h5>Fruits & Vegetables</h5>
+          <h6 style="color: aliceblue; margin-bottom: 20px">
+            Get Upto 30% Off
+          </h6>
+          <a href="#" class="top">Shop Now</a>
+        </div>
+        <div class="col-41">
+          <h5>Fruits & Vegetables</h5>
+          <h6 style="color: aliceblue; margin-bottom: 20px">
+            Get Upto 30% Off
+          </h6>
+          <a href="#" class="top">Shop Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- manu -->
+    <section class="sec-example">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <div>
+                <div class="box">
+                  <div class="box-1">
+                    <i class="fa-regular fa-eye fa-sm"></i>
+                  </div>
+                  <div class="box-1">
+                    <i class="fa-regular fa-heart fa-sm"></i>
+                  </div>
+                  <div class="box-1">
+                    <i class="fa-solid fa-arrow-right-arrow-left fa-sm"></i>
+                  </div>
+                </div>
+                <img
+                  src="https://freshcart-next-js.vercel.app/images/products/product-img-1.jpg"
+                  alt=""
+                />
+              </div>
+              <span class="badge-1">Sale</span>
+              <span class="badge-2">10%</span>
+              <a class="text" href="#">Snack & Munchies</a><br />
+              <a class="text-1" href="#">Haldiram's Sev Bhujia</a>
+              <div class="product-rating">★★★★☆ <span>4.3 (4)</span></div>
+              <div class="title">
+                <div class="product-price">$21.6 <del>$24</del></div>
+                <a href="drop link.html" class="add-btn">+ Add</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="box">
+                <div class="box-1"><i class="fa-regular fa-eye fa-sm"></i></div>
+                <div class="box-1">
+                  <i class="fa-regular fa-heart fa-sm"></i>
+                </div>
+                <div class="box-1">
+                  <i class="fa-solid fa-arrow-right-arrow-left fa-sm"></i>
+                </div>
+              </div>
+              <img
+                src="https://freshcart-next-js.vercel.app/images/products/product-img-5.jpg"
+                alt=""
+              />
+              <span class="badge-1">Sale</span>
+              <span class="badge-2">30%</span>
+              <a class="text" href="#">Instant Food</a><br />
+              <a class="text-1" href="#">Salted Instant Popcorn</a>
+              <div class="product-rating">★★★★☆ <span>4.3 (4)</span></div>
+              <div class="title">
+                <div class="product-price">$11.7<del>$18</del></div>
+                <a href="drop link.html" class="add-btn">+ Add</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="box">
+                <div class="box-1"><i class="fa-regular fa-eye fa-sm"></i></div>
+                <div class="box-1">
+                  <i class="fa-regular fa-heart fa-sm"></i>
+                </div>
+                <div class="box-1">
+                  <i class="fa-solid fa-arrow-right-arrow-left fa-sm"></i>
+                </div>
+              </div>
+              <img
+                src="https://freshcart-next-js.vercel.app/images/products/product-img-4.jpg"
+                alt=""
+              />
+              <span class="badge-1">Sale</span>
+              <span class="badge-2">40%</span>
+              <a class="text" href="#">Snack & Munchies</a><br />
+              <a class="text-1" href="#">Onion Flavour Potato</a>
+              <div class="product-rating">★★★★☆ <span>4.3 (4)</span></div>
+              <div class="title">
+                <div class="product-price">$3<del>$5</del></div>
+                <a href="drop link.html" class="add-btn">+ Add</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="box">
+                <div class="box-1"><i class="fa-regular fa-eye fa-sm"></i></div>
+                <div class="box-1">
+                  <i class="fa-regular fa-heart fa-sm"></i>
+                </div>
+                <div class="box-1">
+                  <i class="fa-solid fa-arrow-right-arrow-left fa-sm"></i>
+                </div>
+              </div>
+              <img
+                src="https://freshcart-next-js.vercel.app/images/products/product-img-3.jpg"
+                alt=""
+              />
+              <span class="badge-1">Sale</span>
+              <a class="text" href="#">Bakery & Biscuits </a><br />
+              <a class="text-1" href="#">Cadbury5StarChocolate </a>
+              <div class="product-rating">★★★★☆ <span>4.3 (4)</span></div>
+              <div class="title">
+                <div class="product-price">$35<del>$35</del></div>
+                <a href="drop link.html" class="add-btn">+ Add</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="box">
+                <div class="box-1"><i class="fa-regular fa-eye fa-sm"></i></div>
+                <div class="box-1">
+                  <i class="fa-regular fa-heart fa-sm"></i>
+                </div>
+                <div class="box-1">
+                  <i class="fa-solid fa-arrow-right-arrow-left fa-sm"></i>
+                </div>
+              </div>
+              <img
+                src="https://freshcart-next-js.vercel.app/images/products/product-img-2.jpg"
+                alt=""
+              />
+              <span class="badge-1">Sale</span>
+              <a class="text" href="#">Bakery & Biscuits</a><br />
+              <a class="text-1" href="#">NutriChoice Digestive</a>
+              <div class="product-rating">★★★★☆ <span>4.3 (4)</span></div>
+              <div class="title">
+                <div class="product-price">$24 <del>$24</del></div>
+                <a href="drop link.html" class="add-btn">+ Add</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ==manu== -->
+    <section class="sec-example">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <div class="box">
+                <div class="box-1"><i class="fa-regular fa-eye fa-sm"></i></div>
+                <div class="box-1">
+                  <i class="fa-regular fa-heart fa-sm"></i>
+                </div>
+                <div class="box-1">
+                  <i class="fa-solid fa-arrow-right-arrow-left fa-sm"></i>
+                </div>
+              </div>
+              <img
+                src="https://freshcart-next-js.vercel.app/images/products/product-img-1.jpg"
+                alt=""
+              />
+              <span class="badge-1">Sale</span>
+              <span class="badge-2">10%</span>
+              <a class="text" href="#">Snack & Munchies</a><br />
+              <a class="text-1" href="#">Haldiram's Sev Bhujia</a>
+              <div class="product-rating">★★★★☆ <span>4.3 (4)</span></div>
+              <div class="title">
+                <div class="product-price">$21.6 <del>$24</del></div>
+                <a href="drop link.html" class="add-btn">+ Add</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="box">
+                <div class="box-1"><i class="fa-regular fa-eye fa-sm"></i></div>
+                <div class="box-1">
+                  <i class="fa-regular fa-heart fa-sm"></i>
+                </div>
+                <div class="box-1">
+                  <i class="fa-solid fa-arrow-right-arrow-left fa-sm"></i>
+                </div>
+              </div>
+              <img
+                src="https://freshcart-next-js.vercel.app/images/products/product-img-5.jpg"
+                alt=""
+              />
+              <span class="badge-1">Sale</span>
+              <span class="badge-2">10%</span>
+              <a class="text" href="#">Instant Food</a><br />
+              <a class="text-1" href="#">Salted Instant Popcorn</a>
+              <div class="product-rating">★★★★☆ <span>4.3 (4)</span></div>
+              <div class="title">
+                <div class="product-price">$21.6 <del>$24</del></div>
+                <a href="drop link.html" class="add-btn">+ Add</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="box">
+                <div class="box-1"><i class="fa-regular fa-eye fa-sm"></i></div>
+                <div class="box-1">
+                  <i class="fa-regular fa-heart fa-sm"></i>
+                </div>
+                <div class="box-1">
+                  <i class="fa-solid fa-arrow-right-arrow-left fa-sm"></i>
+                </div>
+              </div>
+              <img
+                src="https://freshcart-next-js.vercel.app/images/products/product-img-6.jpg"
+                alt=""
+              />
+              <span class="badge-1">Sale</span>
+              <span class="badge-2">10%</span>
+              <a class="text" href="#">Snack & Munchies</a><br />
+              <a class="text-1" href="#">Onion Flavour Potato</a>
+              <div class="product-rating">★★★★☆ <span>4.3 (4)</span></div>
+              <div class="title">
+                <div class="product-price">$14.4 <del>$24</del></div>
+                <a href="drop link.html" class="add-btn">+ Add</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="box">
+                <div class="box-1"><i class="fa-regular fa-eye fa-sm"></i></div>
+                <div class="box-1">
+                  <i class="fa-regular fa-heart fa-sm"></i>
+                </div>
+                <div class="box-1">
+                  <i class="fa-solid fa-arrow-right-arrow-left fa-sm"></i>
+                </div>
+              </div>
+              <img
+                src="https://freshcart-next-js.vercel.app/images/products/product-img-7.jpg"
+                alt=""
+              />
+              <span class="badge-1">Sale</span>
+              <span class="badge-2">10%</span>
+              <a class="text" href="#">Dairy, Bread & Eggs </a><br />
+              <a class="text-1" href="#">Cadbury5StarChocolate </a>
+              <div class="product-rating">★★★★☆ <span>4.3 (4)</span></div>
+              <div class="title">
+                <div class="product-price">$24<del>$24</del></div>
+                <a href="drop link.html" class="add-btn">+ Add</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="box">
+                <div class="box-1"><i class="fa-regular fa-eye fa-sm"></i></div>
+                <div class="box-1">
+                  <i class="fa-regular fa-heart fa-sm"></i>
+                </div>
+                <div class="box-1">
+                  <i class="fa-solid fa-arrow-right-arrow-left fa-sm"></i>
+                </div>
+              </div>
+              <img
+                src="https://freshcart-next-js.vercel.app/images/products/product-img-8.jpg"
+                alt=""
+              />
+              <span class="badge-1">Sale</span>
+              <span class="badge-2">10%</span>
+              <a class="text" href="#">Instant Food</a><br />
+              <a class="text-1" href="#">NutriChoice Digestive</a>
+              <div class="product-rating">★★★★☆ <span>4.3 (4)</span></div>
+              <div class="title">
+                <div class="product-price">$29<del> $35</del></div>
+                <a href="drop link.html" class="add-btn">+ Add</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==== -->
+    <section class="sec-example">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <div class="box">
+                <div class="box-1"><i class="fa-regular fa-eye fa-sm"></i></div>
+                <div class="box-1">
+                  <i class="fa-regular fa-heart fa-sm"></i>
+                </div>
+                <div class="box-1">
+                  <i class="fa-solid fa-arrow-right-arrow-left fa-sm"></i>
+                </div>
+              </div>
+              <img
+                src="https://freshcart-next-js.vercel.app/images/products/product-img-17.jpg"
+                alt=""
+              />
+              <span class="badge-1">Sale</span>
+              <span class="badge-2">10%</span>
+              <a class="text" href="#">Snack & Munchies</a><br />
+              <a class="text-1" href="#">Haldiram's Sev Bhujia</a>
+              <div class="product-rating">★★★★☆ <span>4.3 (4)</span></div>
+              <div class="title">
+                <div class="product-price">$21.6 <del>$24</del></div>
+                <a href="drop link.html" class="add-btn">+ Add</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="box">
+                <div class="box-1"><i class="fa-regular fa-eye fa-sm"></i></div>
+                <div class="box-1">
+                  <i class="fa-regular fa-heart fa-sm"></i>
+                </div>
+                <div class="box-1">
+                  <i class="fa-solid fa-arrow-right-arrow-left fa-sm"></i>
+                </div>
+              </div>
+              <img
+                src="https://freshcart-next-js.vercel.app/images/products/product-img-12.jpg"
+                alt=""
+              />
+              <span class="badge-1">Sale</span>
+              <span class="badge-2">10%</span>
+              <a class="text" href="#">Instant Food</a><br />
+              <a class="text-1" href="#">Salted Instant Popcorn</a>
+              <div class="product-rating">★★★★☆ <span>4.3 (4)</span></div>
+              <div class="title">
+                <div class="product-price">$21.6 <del>$24</del></div>
+                <a href="drop link.html" class="add-btn">+ Add</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="box">
+                <div class="box-1"><i class="fa-regular fa-eye fa-sm"></i></div>
+                <div class="box-1">
+                  <i class="fa-regular fa-heart fa-sm"></i>
+                </div>
+                <div class="box-1">
+                  <i class="fa-solid fa-arrow-right-arrow-left fa-sm"></i>
+                </div>
+              </div>
+              <img src="https://freshcart-next-js.vercel.app/images/products/product-img-11.jpg" alt="">
+              <img src="" alt="">
+              <span class="badge-1">Sale</span>
+              <span class="badge-2">10%</span>
+              <a class="text" href="#">Snack & Munchies</a><br />
+              <a class="text-1" href="#">Onion Flavour Potato</a>
+              <div class="product-rating">★★★★☆ <span>4.3 (4)</span></div>
+              <div class="title">
+                <div class="product-price">$14.4 <del>$24</del></div>
+                <a href="drop link.html" class="add-btn">+ Add</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="box">
+                <div class="box-1"><i class="fa-regular fa-eye fa-sm"></i></div>
+                <div class="box-1">
+                  <i class="fa-regular fa-heart fa-sm"></i>
+                </div>
+                <div class="box-1">
+                  <i class="fa-solid fa-arrow-right-arrow-left fa-sm"></i>
+                </div>
+              </div>
+              <img src="https://freshcart-next-js.vercel.app/images/products/product-img-9.jpg" alt="">
+            
+              <span class="badge-1">Sale</span>
+              <span class="badge-2">10%</span>
+              <a class="text" href="#">Dairy, Bread & Eggs </a><br />
+              <a class="text-1" href="#">Amul Butter - 500 g</a>
+              <div class="product-rating">★★★★☆ <span>4.3 (4)</span></div>
+              <div class="title">
+                <div class="product-price">$24<del>$24</del></div>
+                <a href="drop link.html" class="add-btn">+ Add</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="box">
+                <div class="box-1"><i class="fa-regular fa-eye fa-sm"></i></div>
+                <div class="box-1">
+                  <i class="fa-regular fa-heart fa-sm"></i>
+                </div>
+                <div class="box-1">
+                  <i class="fa-solid fa-arrow-right-arrow-left fa-sm"></i>
+                </div>
+              </div>
+              <img src="https://freshcart-next-js.vercel.app/images/products/product-img-10.jpg" alt="">
+              <span class="badge-1">Sale</span>
+              <span class="badge-2">10%</span>
+              <a class="text" href="#">Instant Food</a><br />
+              <a class="text-1" href="#">Slurrp Millet Chocolate</a>
+              <div class="product-rating">★★★★☆ <span>4.3 (4)</span></div>
+              <div class="title">
+                <div class="product-price">$29<del> $39</del></div>
+                <a href="drop link.html" class="add-btn">+ Add</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   <!-- ------------- -->
+    <section class="sec-example">
+      <h1 style="margin-left: 80px  ">Daily Best Sells</h1><br> <br>
+      <div class="container-5">
+        <div class="row30">
+          <div class="col71">
+            <h1 class="beans">100% Organic Coffee Beans.</h1>
+            <span class="close">Get the best deal before close.</span>
+            <button class="shop"><a href="#" class="shop">Shop Now </a></button>
+          </div>
+          <div class="col70">
+            <img
+              src="https://freshcart-next-js.vercel.app/images/products/product-img-11.jpg"
+              alt=""
+            />
+            <a class="text" href="#">Instant Food</a><br />
+            <a class="text-1" href="#">Roast Ground Coffee</a>
+            <div class="star">
+              <del class="Price">$13.5 $18</del> ★★★★☆ 4.3 (4)
+            </div>
+            <a class="Sells" href="drop link.html" > + add to cart </a>
+            <div class="days">
+              <div class="mins">
+                1344
+                <span class="hours">days</span>
+              </div>
+              <div class="mins">
+                0
+                <span class="hours">hours</span>
+              </div>
+              <div class="mins">
+                51
+                <span class="hours">mins</span>
+              </div>
+            </div>
+          </div>
+          <div class="col70">
+            <img
+              src="https://freshcart-next-js.vercel.app/images/products/product-img-12.jpg"
+              alt=""
+            />
+            <a class="text" href="#">Instant Food</a><br />
+            <a class="text-1" href="#">Crushed Tomatoes</a>
+            <div class="star">
+              <del class="Price">$13.5 $18</del> ★★★★☆ 4.3 (4)
+            </div>
+            <a href="drop link.html" class="Sells">+ add to cart</a>
+            <div class="days">
+              <div class="mins">
+                1344
+                <span class="hours">days</span>
+              </div>
+              <div class="mins">
+                0
+                <span class="hours">hours</span>
+              </div>
+              <div class="mins">
+                51
+                <span class="hours">mins</span>
+              </div>
+            </div>
+          </div>
+          <div class="col70">
+            <img
+              src="https://freshcart-next-js.vercel.app/images/products/product-img-13.jpg"
+              alt=""
+            />
+            <a class="text" href="#">Fruits & Vegetables</a><br />
+            <a class="text-1" href="#">Golden Pineapple</a>
+            <div class="star">
+              <del class="Price">$13.5 $18</del> ★★★★☆ 4.3 (4)
+            </div>
+            <a href="drop link.html" class="Sells">+ add to cart</a>
+            <div class="days">
+              <div class="mins">
+                1344
+                <span class="hours">days</span>
+              </div>
+              <div class="mins">
+                0
+                <span class="hours">hours</span>
+              </div>
+              <div class="mins">
+                51
+                <span class="hours">mins</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br /><br /><br /> 
+        <br><br><br><br> 
+    <br> <br> <br> 
+
+     <!-- icon -->
+      
+     <section class="sec-example">
+     
+      <div class="container-40">
+        <div class="row">
+          <div class="col50">
+            <i class="fa-solid fa-toggle-on fa-2xl" style="color: #99e665"></i>
+            <h5 style="margin-top: 10px; color: #99e665">
+              10 minute grocery now
+            </h5>
+            <h6 style="font-size: 15px; margin-top: 10px">
+              Get your order delivered to your doorstep at the earliest from
+              FreshCart pickup stores near you.
+            </h6>
+          </div>
+          <div class="col50">
+            <i class="fa-solid fa-gift fa-2xl" style="color: #63e6be"></i>
+            <h5 style="margin-top: 10px; color: #99e665">
+              Best Prices & Offers
+            <h6 style="font-size: 15px; margin-top: 10px">
+                Cheaper prices than your local supermarket,
+                great cashback offers to top it off. Get best pricess & offers.
+            </h6>
+          </div>
+          <div class="col50">
+            <i class="fa-solid fa-box fa-2xl" style="color: #b197fc"></i>
+            <h5 style="margin-top: 10px; color: #99e665">
+              Wide Assortment
+            </h5>
+            <h6 style="font-size: 15px; margin-top: 10px">
+              Choose from 5000+ products across food, personal care,
+              household, bakery, veg and non-veg & other categories.
+            </h6>
+          </div>
+          <div class="col50">
+            <i class="fa-solid fa-arrows-turn-to-dots fa-2xl"></i>
+            <h5 style="margin-top: 10px; color: #99e665">
+              Easy Returns  </h5>
+            <h6 style="font-size: 15px; margin-top: 10px">
+              Not satisfied with a product? Return it at the 
+              doorstep & get a refund within hours. No questions asked policy . </h6>
+          </div>
+        </div>
+      </div>
+     
+    </section>
+    
+
+    <!-- ============== -->
+    <br />
+    <section class="sec-container-4">
+      <div class="contaner-3">
+        <div class="row-30">
+          <div class="col-30">
+            <div class="logo">
+              <img class="FreshCart"
+              src="https://cdn.pixabay.com/photo/2014/04/02/10/53/shopping-cart-304843_1280.png"
+              alt="Logo"
+            />
+              FreshCart
+            </div>
+            <p class="pharagrap">
+              Geek is feature-rich components and beautifully Bootstrap UIKit
+              for developers, built with bootstrap responsive framework.
+            </p>
+            <div class="face">
+              <i class="fa-brands fa-facebook fa-lg"></i>
+              <i class="fa-brands fa-twitter fa-lg"></i>
+              <i class="fa-brands fa-instagram fa-lg"></i>
+            </div>
+          </div>
+          <div class="col-31">
+            <h3 style="margin-bottom: 20px">Company</h3>
+            <ul type="none">
+              <li><a class="Company" href="#">About</a></li>
+              <li><a class="Company" href="#">Pricing</a></li>
+              <li><a class="Company" href="#">Blog</a></li>
+              <li><a class="Company" href="#">Careers</a></li>
+              <li><a class="Company" href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-31">
+            <h3 style="margin-bottom: 20px">Support</h3>
+            <ul type="none">
+              <li><a class="Company" href="#">Help and Support</a></li>
+              <li><a class="Company" href="#">Become Instructor </a></li>
+              <li><a class="Company" href="#">Get the app</a></li>
+              <li><a class="Company" href="#">FAQ’s</a></li>
+              <li><a class="Company" href="#">Tutorial</a></li>
+            </ul>
+          </div>
+          <div class="col-30">
+            <h3>Support</h3>
+            <ul type="none">
+              <li>
+                <a class="Company" href="#"
+                  >McDermott Points Hettingerhaven,NV
+                </a>
+              </li>
+              <li>
+                <a class="Company" href="#">Email: support@veasna.com </a>
+              </li>
+              <li><a class="Company" href="#">Phone: (000) 67 45 19 71</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr style="width: 1200px; margin-left: 70px; color: black" />
+        <div class="aline">
+          <p >© 2023 FreshCart-UI, Inc. All Rights Reserved</p>
+          <p>Design Date : Sep/17/2023</p>
+          <div class="google">
+            <img
+              class="google"
+              src="https://0007-css-homework-07-drop-menu.netlify.app/img/appstore.svg"
+              alt=""
+            />
+            <img
+              class="google"
+              src="https://0007-css-homework-07-drop-menu.netlify.app/img/playstore.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <hr style="width: 1200px; margin-left: 70px; color: black" />
+      </div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      const progressCircle = document.querySelector(".autoplay-progress svg");
+      const progressContent = document.querySelector(".autoplay-progress span");
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        loop: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        on: {
+          autoplayTimeLeft(s, time, progress) {
+            progressCircle.style.setProperty("--progress", 1 - progress);
+            progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+          },
+        },
+      });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
